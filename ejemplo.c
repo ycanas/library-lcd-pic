@@ -10,19 +10,17 @@
 
 void main(void) {
     lcd_init();
-    lcd_set_cursor(0, 0);
-    lcd_print("ANDERSON");
- 
-    lcd_set_cursor(1, 0);
-    lcd_print("YAIR");
-    
-    lcd_set_cursor(2, 0);
-    lcd_print("CANAS");
-    
-    lcd_set_cursor(3, 0);
-    lcd_print("RANGEL");
+    lcd_print("Iniciando...");
+    __delay_ms(2000);
     
     while (1) {
-        
+        lcd_clear();
+        lcd_print("Hola");
+
+        __delay_ms(50);
+
+        lcd_set_cursor(1, 0);
+        lcd_print("Mundo");
+        __delay_ms(5000);
     }
 }
