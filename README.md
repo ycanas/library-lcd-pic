@@ -1,7 +1,10 @@
 <h1 align="center">Libreria LCD - PIC16F877A</h1>
 
 Esta es una librería para el microcontrolador PIC16F877A que proporciona funciones para controlar una LCD de 16x2 y 20x4. Con esta librería, puedes enviar comandos y datos a la LCD, y controlar su funcionamiento de manera sencilla.
-En el archivo de cabecera LCD.h se encuentra la configuración inicial y la declaración de los pines y en el archivo LCD.c se encuentra toda la logica del programa.
+
+En el archivo de cabecera LCD.h se encuentra la configuración inicial y la declaración de los pines, de igual forma en el archivo LCD.c se encuentra toda la logica del programa.
+
+Adicionalmente en los archivos CONFIG.h y CONFIG.c se encuentra la configuración del cristal y de los fuses del PIC y junto a ellos se encuentra un archivo llamado ejemplo.c en el cual se muestra el funcionamiento de la libreria.
 
 ## Características
 
