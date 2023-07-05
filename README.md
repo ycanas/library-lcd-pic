@@ -11,13 +11,15 @@ Esta es una librería para el microcontrolador PIC16F877A que proporciona funcio
 
 ## Funciones - Metodos
 
-| Función | Descripción |
-| --- | ----------- |
-| lcd_init() | Inicialización de la LCD |
-| lcd_clear() | Limpiar pantalla de la LCD |
-| lcd_set_cursor() | Posicionar el cursor en la LCD |
-| lcd_print() | Imprimir datos en la LCD |
-| lcd_cmd | Escribir comando en la LCD |
+```
+Función                     Descripción
+---------------------------------------------------------
+lcd_init()          ===>    Inicializa la LCD
+lcd_clear()         ===>    Limpia la LCD
+lcd_set_cursor()    ===>    Posiciona el cursor en la LCD
+lcd_print()         ===>    Imprime información en la LCD
+lcd_comand()        ===>    Escribe comandos en la LCD
+```
 
 ## Materiales
 
