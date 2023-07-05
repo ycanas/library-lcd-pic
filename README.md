@@ -12,13 +12,13 @@ Esta es una librería para el microcontrolador PIC16F877A que proporciona funcio
 ## Funciones - Metodos
 
 ```
-Función                     Descripción
----------------------------------------------------------
-lcd_init()          ===>    Inicializa la LCD
-lcd_clear()         ===>    Limpia la LCD
-lcd_set_cursor()    ===>    Posiciona el cursor en la LCD
-lcd_print()         ===>    Imprime información en la LCD
-lcd_comand()        ===>    Escribe comandos en la LCD
+Función                                                     Descripción                          
+-------------------------------------------------------------------------------------------------------------
+lcd_init()                                          ===>    Inicializa la LCD                ===>    Ninguno
+lcd_clear()                                         ===>    Limpia la LCD                    ===>    Ninguno
+lcd_set_cursor(unsigned char y, unsigned char x)    ===>    Posiciona el cursor en la LCD    ===>    Fila (y [0-3]), Columna (x [0-19])
+lcd_print(const char *str)                          ===>    Imprime información en la LCD    ===>    String
+lcd_comand(unsigned char cmd)                       ===>    Escribe comandos en la LCD       ===>    Comando
 ```
 
 ## Materiales
@@ -43,6 +43,7 @@ lcd_comand()        ===>    Escribe comandos en la LCD
 
 ```
 Como se denota en la anterior tabla, el pin RD3 del microcontrolador no se conecta a ningun pin de la LCD.
+Y todos los pines son declarados como salida.
 ```
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/ycanas/LCD-PIC16F877A?color=004ef6&style=for-the-badge&labelColor=101010)
