@@ -17,29 +17,14 @@ Además, en el archivo **main.c**, se encuentra un ejemplo de uso de la librerí
 
 ## Funciones - Metodos
 
-- **LCD_Init():**
-  Inicializa la LCD
-  - Parámetros: Ninguno
-
-- **LCD_SetCursor(y, x):**
-  Posiciona el cursor de la LCD
-  - Parámetros: `y` (fila [0-3]), `x` (columna [0-19])
-
-- **LCD_Print(string):**
-  Imprime en la LCD
-  - Parámetros: `*String`: Texto
-
-- **LCD_Clear():**
-  Limpia la LCD
-  - Parámetros: Ninguno
-
-- **cmd(cmd):**
-  Escribe comandos en la LCD
-  - Parámetros: `cmd`: Comando
-
-- **str(cmd):**
-  Escribe un dato en la LCD
-  - Parámetros: `cmd`: Char - Dato
+| Función                | Descripción                   | Parámetros                           |
+| ---------------------- | ----------------------------- | ------------------------------------ |
+| `LCD_Init();`          | Inicializa la LCD             | Ninguno                              |
+| `LCD_SetCursor(y, x);` | Posiciona el cursor de la LCD | `y`: fila [0-3], `x`: columna [0-19] |
+| `LCD_Print(*string);`  | Imprime en la LCD             | `*String`: Texto                     |
+| `LCD_Clear();`         | Limpia la LCD                 | Ninguno                              |
+| `cmd(cmd);`            | Escribe comandos en la LCD    | `cmd`: Comando                       |
+| `str(cmd);`            | Escribe un dato en la LCD     | `cmd`: Char - Dato                   |
 
 
 Nota🗒️: Las funciones cmd() y str() son de uso interno y no es necesario utilizarlas directamente. Sin embargo, si se posee un conocimiento avanzado de su funcionamiento, es posible implementarlas para enviar comandos personalizados y caracteres. Se recomienda precaución al hacer uso de estas funciones, ya que podrían afectar el funcionamiento general de la LCD. 
