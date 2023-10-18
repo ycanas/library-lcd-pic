@@ -1,7 +1,4 @@
-#include <xc.h>
-#include "CONFIG.h"
-
-#pragma config FOSC  = XT
+#pragma config FOSC  = HS
 #pragma config WDTE  = OFF
 #pragma config PWRTE = ON
 #pragma config BOREN = ON
