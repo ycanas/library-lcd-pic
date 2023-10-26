@@ -2,9 +2,9 @@
 
 Esta es una librería para microcontroladores PIC que proporciona funciones para controlar una LCD de 16x2 y 20x4. Con esta librería, puedes enviar comandos y datos a la LCD, y controlar su funcionamiento de manera sencilla.
 
-En el archivo de cabecera `lcd.h` se encuentra la configuración inicial, la declaración de los pines y constantes, de igual forma en el archivo `lcd.c` se encuentra toda la logica del programa.
+En el archivo de cabecera **"lcd.h"** se encuentra la configuración inicial, la declaración de los pines y constantes, de igual forma en el archivo **"lcd.c"** se encuentra toda la logica del programa.
 
-Además, en el archivo `main.c`, se encuentra un ejemplo de uso de la librería, acompañado de sus archivos de cabecera `cofig.h` y `fuses.c`. Estos últimos son responsables de configurar tanto el cristal como los fusibles del microcontrolador PIC utilizado en el ejemplo (PIC16F877A).
+Además, en el archivo **"main.c"**, se encuentra un ejemplo de uso de la librería, acompañado de sus archivos de cabecera **"cofig.h"** y **"fuses.c"**. Estos últimos son responsables de configurar tanto el cristal como los fusibles del microcontrolador PIC utilizado en el ejemplo (PIC16F877A).
 
 
 ## Características
@@ -17,15 +17,16 @@ Además, en el archivo `main.c`, se encuentra un ejemplo de uso de la librería,
 
 ## Funciones - Metodos
 
-| Función              | Descripción                   | Parámetros                         |
-| -------------------- | ----------------------------- | ---------------------------------- |
-| LCD_Init();          | Inicializa la LCD             | `Ninguno`                          |
-| LCD_SetCursor(y, x); | Posiciona el cursor de la LCD | `y` fila [0-3], `x` columna [0-19] |
-| LCD_Print(*string);  | Imprime en la LCD             | `*String` Texto                    |
-| LCD_Clear();         | Limpia la LCD                 | `Ninguno`                          |
-| cmd(cmd);            | Escribe comandos en la LCD    | `cmd` Comando                      |
-| str(cmd);            | Escribe un dato en la LCD     | `cmd` Char - Dato                  |
-
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                 │
+│    1. lcd_init(void)       --->  Inicializa y configura la LCD, no recibe ningún parámetro.                     │
+│    2. lcd_setcursor(y, x)  --->  Posiciona el cursor en la ubicación deseada, @params (y: fila, x: columna).    │
+│    3. lcd_print(string)    --->  Imprime texto en la LCD, @params (string: texto).                              │
+│    4. lcd_clear(void)      --->  Limpia la pantalla de la LCD, no recibe parámetros.                            │                                                                       
+│    5. cmd(cmd)             --->  Envía comandos a la LCD, @params (cmd: comando).                               │
+│    6. str(cmd)             --->  Escribe caracteres a la LCD, @params (cmd: caracter).                          │
+│                                                                                                                 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 Nota🗒️: Las funciones cmd() y str() son de uso interno y no es necesario utilizarlas directamente. Sin embargo, si se posee un conocimiento avanzado de su funcionamiento, es posible implementarlas para enviar comandos personalizados y caracteres. Se recomienda precaución al hacer uso de estas funciones, ya que podrían afectar el funcionamiento general de la LCD. 
 
