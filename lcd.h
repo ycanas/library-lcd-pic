@@ -2,7 +2,7 @@
 /* 
  * File: lcd.h
  * Author: ycanas
- * Revision history: 17/10/2023
+ * Revision history: 25/10/2023
  */
 
 
@@ -29,10 +29,10 @@ const unsigned char POSy[4] = {0x80, 0xC0, 0x94, 0xD4};
 
 /******************* FUNCIONES *******************/
 
-void LCD_Init(void);
-void LCD_SetCursor(unsigned char y, unsigned char x);
-void LCD_Print(char *string);
-void LCD_Clear(void);
+void lcd_init(void);
+void lcd_setcursor(unsigned char y, unsigned char x);
+void lcd_print(char *string);
+void lcd_clear(void);
 
 void cmd(unsigned char cmd);
 void str(unsigned char cmd);
