@@ -2,7 +2,7 @@
 /*
  * File: lcd.c
  * Author: ycanas
- * Revision history: 17/10/2023
+ * Revision history: 25/10/2023
  */
 
 
@@ -107,7 +107,7 @@ void str(unsigned char cmd) {
 }
 
 
-void LCD_Init() {
+void lcd_init() {
     TRISLCD = 0;
     PORTLCD = 0;
     
@@ -126,13 +126,13 @@ void LCD_Init() {
 }
 
 
-void LCD_SetCursor(unsigned char y, unsigned char x) {
+void lcd_setcursor(unsigned char y, unsigned char x) {
     cmd(POSy[y] + x);
     __delay_us(100);
 }   
 
 
-void LCD_Print(char *string) {
+void lcd_print(char *string) {
     while (*string) {
         str(*string);
         string++;
@@ -140,7 +140,7 @@ void LCD_Print(char *string) {
 }
 
 
-void LCD_Clear() {
+void lcd_clear() {
     cmd(0x01);
     __delay_ms(1);
 }
