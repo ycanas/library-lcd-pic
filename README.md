@@ -2,9 +2,9 @@
 
 Esta es una librería para microcontroladores PIC que proporciona funciones para controlar una LCD de 16x2 y 20x4. Con esta librería, puedes enviar comandos y datos a la LCD, y controlar su funcionamiento de manera sencilla.
 
-En el archivo de cabecera **"lcd.h"** se encuentra la configuración inicial, la declaración de los pines y constantes, de igual forma en el archivo **"lcd.c"** se encuentra toda la logica del programa.
+En el archivo de cabecera "lcd.h" se encuentra la configuración inicial, la declaración de los pines y constantes, de igual forma en el archivo "lcd.c" se encuentra toda la logica del programa.
 
-Además, en el archivo **"main.c"**, se encuentra un ejemplo de uso de la librería, acompañado de sus archivos de cabecera **"cofig.h"** y **"fuses.c"**. Estos últimos son responsables de configurar tanto el cristal como los fusibles del microcontrolador PIC utilizado en el ejemplo (PIC16F877A).
+Además, en el archivo "main.c", se encuentra un ejemplo de uso de la librería, acompañado de sus archivos de cabecera "cofig.h" y "fuses.c". Estos últimos son responsables de configurar tanto el cristal como los fusibles del microcontrolador PIC utilizado en el ejemplo (PIC16F877A).
 
 
 ## Características
@@ -17,6 +17,7 @@ Además, en el archivo **"main.c"**, se encuentra un ejemplo de uso de la librer
 
 ## Funciones - Metodos
 
+```
 ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │                                                                                                                 │
 │    1. lcd_init(void)       --->  Inicializa y configura la LCD, no recibe ningún parámetro.                     │
@@ -27,6 +28,7 @@ Además, en el archivo **"main.c"**, se encuentra un ejemplo de uso de la librer
 │    6. str(cmd)             --->  Escribe caracteres a la LCD, @params (cmd: caracter).                          │
 │                                                                                                                 │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 Nota🗒️: Las funciones cmd() y str() son de uso interno y no es necesario utilizarlas directamente. Sin embargo, si se posee un conocimiento avanzado de su funcionamiento, es posible implementarlas para enviar comandos personalizados y caracteres. Se recomienda precaución al hacer uso de estas funciones, ya que podrían afectar el funcionamiento general de la LCD. 
 
