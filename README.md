@@ -54,7 +54,7 @@ Nota🗒️: Si bien se estableció una configuración de pines predeterminada, 
 ![Ejemplo](./ejemplo.png)
 
 
-¡Gracias por visitar este proyecto! Si te ha sido útil, no dudes en darle una ⭐ (estrella) al repositorio. Tu apoyo es muy apreciado. Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, estaré encantado de escucharte. No dudes en ponerte en contacto. 📫 yairca3.7@gmail.com
+¡Gracias por visitar este proyecto! Si te ha sido útil, no dudes en darle una ⭐ (estrella) al repositorio. Tu apoyo es muy apreciado. Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, estaré encantado de escucharte. No dudes en ponerte en contacto.
 
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/ycanas/library-lcd-pic?color=004ef6&style=for-the-badge&labelColor=101010)
